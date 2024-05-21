@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Resume Web App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Header -->
+        <header class="text-center mb-5">
+            <h1>Sarath Chandran M</h1>
+            <p class="lead">Software Developer</p>
+        </header>
+
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="assets/profile.jpg" class="card-img-top" alt="Profile Picture">
+                    <div class="card-body">
+                        <h2 class="card-title">Contact Information</h2>
+                        <ul class="list-unstyled">
+                            <li>Email: sarathchandranm2001@gmail.com</li>
+                            <li>Phone: 7560945656</li>
+                            <li>LinkedIn: <a href="https://www.linkedin.com/in/sarath-chandran-8899632b7/" target="_blank">linkedin.com/in/Sarath</a></li>
+                            <li>GitHub: <a href="https://github.com/sarathchandranm2001" target="_blank">github.com/SarathChandranM</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-md-8">
+                <section id="experience" class="mb-4">
+                    <h2 class="border-bottom pb-2">Experience</h2>
+                    <div class="job mb-3">
+                        <h3>Fresher</h3>
+                        <p class="text-muted">Company XYZ | January 2020 - Present</p>
+                        <p>Responsibilities and achievements...</p>
+                    </div>
+                </section>
+
+                <section id="education" class="mb-4">
+                    <h2 class="border-bottom pb-2">Education</h2>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <p class="text-muted">University ABC | Graduated: 2019</p>
+                </section>
+
+                <section id="skills" class="mb-4">
+                    <h2 class="border-bottom pb-2">Skills</h2>
+                    <ul class="list-unstyled">
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                </section>
+
+                <section id="projects" class="mb-4">
+                    <h2 class="border-bottom pb-2">Projects</h2>
+                    <div class="project mb-3">
+                        <h3>Project Name</h3>
+                        <p>Description of the project...</p>
+                        <a href="https://github.com/johndoe/project" target="_blank">GitHub Link</a>
+                    </div>
+                </section>
+
+                <section id="contact" class="mb-4">
+                    <h2 class="border-bottom pb-2">Contact Me</h2>
+                    <form id="contactForm" method="POST" action="send_email.php">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-5">
+            <p>&copy; 2024 Sarath Chandran M. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
