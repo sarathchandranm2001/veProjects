@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Your Name</title>
+    <title>Portfolio | Sarath Chandran M</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styless.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand {
+            color: #fff;
+        }
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
         .hero {
             background-image: url('path/to/background-image.jpg');
             background-size: cover;
@@ -21,12 +35,65 @@
             color: #fff;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .hero .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid #fff;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2rem;
+            color: #007bff;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #ffc107;
+            margin: 10px auto 0;
+        }
+        .skills-section .owl-item {
+            text-align: center;
+        }
+        .skills-section .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .skills-section .card-body {
+            padding: 20px;
+        }
+        .skills-section .card-title {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #ffc107;
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Your Name</a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Sarath Chandran M</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,28 +109,28 @@
                 </ul>
             </div>
         </nav>
-        <div class="hero">
+        <div class="hero text-center">
             <div class="container">
-                <h1>Hi, I'm Your Name</h1>
+                <h1>Hi, I'm Sarath Chandran M</h1>
                 <p>Aspiring Software Professional</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                     <a href="#"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fas fa-envelope"></i></a>
                 </div>
-                <img src="assets/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle mt-3">
+                <img src="assets/profile.jpeg" alt="Profile Picture" class="img-fluid rounded-circle mt-3">
             </div>
         </div>
     </header>
 
     <main class="container mt-5">
         <section id="about" data-aos="fade-up">
-            <h2>About Me</h2>
-            <p>I am an ongoing MCA (Master of Computer Applications) graduate seeking an entry-level position in the field of computer science or software development.</p>
+            <h2 class="section-title">About Me</h2>
+            <p>I am an ongoing MCA (Master of Computer Applications) graduate at Rajagiri College Of Social Sciences seeking an entry-level position in the field of computer science or software development.</p>
         </section>
         
         <section id="experience" data-aos="fade-up">
-            <h2>Experience</h2>
+            <h2 class="section-title">Experience</h2>
             <div class="job">
                 <h3>No professional experience yet</h3>
                 <p>I am an ongoing MCA (Master of Computer Applications) graduate seeking an entry-level position in the field of computer science or software development.</p>
@@ -71,7 +138,7 @@
         </section>
         
         <section id="education" data-aos="fade-up">
-            <h2>Education</h2>
+            <h2 class="section-title">Education</h2>
             <div class="education">
                 <h3>Master of Computer Applications (MCA)</h3>
                 <p class="text-muted">Rajagiri College Of Social Science | Ongoing</p>
@@ -84,7 +151,7 @@
         </section>
         
         <section id="skills" class="skills-section" data-aos="fade-up">
-            <h2>Skills</h2>
+            <h2 class="section-title">Skills</h2>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="skill card text-center">
@@ -102,12 +169,67 @@
                         </div>
                     </div>
                 </div>
-                <!-- Add more skills similarly -->
+                <div class="item">
+                    <div class="skill card text-center">
+                        <div class="card-body">
+                            <i class="fab fa-js fa-2x"></i>
+                            <h5 class="card-title">JavaScript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-code fa-2x"></i>
+                            <h5 class="card-title">C</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill card text-center">
+                        <div class="card-body">
+                            <i class="fab fa-java fa-2x"></i>
+                            <h5 class="card-title">Java</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill card text-center">
+                        <div class="card-body">
+                            <i class="fab fa-python fa-2x"></i>
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill card text-center">
+                        <div class="card-body">
+                            <i class="fab fa-php fa-2x"></i>
+                            <h5 class="card-title">PHP</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-code-branch fa-2x"></i>
+                            <h5 class="card-title">Django</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="skill card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-database fa-2x"></i>
+                            <h5 class="card-title">SQL</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
         <section id="certificates" data-aos="fade-up">
-            <h2>Certificates</h2>
+            <h2 class="section-title">Certificates</h2>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="card">
@@ -132,7 +254,7 @@
         </section>
         
         <section id="projects" data-aos="fade-up">
-            <h2>Projects</h2>
+            <h2 class="section-title">Projects</h2>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="card">
@@ -159,7 +281,7 @@
         </section>
         
         <section id="contact" data-aos="fade-up">
-            <h2>Contact Me</h2>
+            <h2 class="section-title">Contact Me</h2>
             <form id="contactForm" method="POST" action="send_email.php">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -178,8 +300,8 @@
         </section>
     </main>
 
-    <footer class="text-center mt-5">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2024 Sarath Chandran M. All rights reserved.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
