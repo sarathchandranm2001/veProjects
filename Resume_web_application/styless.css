@@ -21,22 +21,12 @@ body, html {
 }
 
 .hero {
-    background: linear-gradient(to right, #007bff, #6610f2), url('assets/hero-bg.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
     padding: 100px 0;
     position: relative;
-}
-
-.hero:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
@@ -59,15 +49,14 @@ body, html {
     font-size: 24px;
 }
 
-.profile-photo img {
-    width: 150px;
-    height: 150px;
-}
-
 .section-title {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 30px;
+}
+
+.section-spacing {
+    padding: 60px 0;
 }
 
 .job, .education {
