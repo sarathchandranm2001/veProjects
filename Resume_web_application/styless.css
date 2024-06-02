@@ -4,7 +4,7 @@ body, html {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .navbar {
@@ -21,25 +21,47 @@ body, html {
 }
 
 .hero {
-    background: linear-gradient(to right, #007bff, #6610f2);
+    background: linear-gradient(to right, #007bff, #6610f2), url('assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     color: #fff;
     padding: 100px 0;
+    position: relative;
+}
+
+.hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
     font-size: 48px;
     font-weight: 600;
+    z-index: 1;
+    position: relative;
 }
 
 .hero p {
     font-size: 20px;
     margin-top: 20px;
+    z-index: 1;
+    position: relative;
 }
 
 .social-links a {
     color: #fff;
     margin: 0 10px;
     font-size: 24px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
 }
 
 .section-title {
@@ -82,8 +104,8 @@ body, html {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #060606;
     padding: 20px 0;
 }
 
